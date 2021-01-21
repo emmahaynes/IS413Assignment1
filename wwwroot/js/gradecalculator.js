@@ -11,8 +11,10 @@ submit.addEventListener("click", function () {
     var grade = 0;
     var letter = "";
 
+    //calculates percentage
     grade = (assignment * .5) + (group * .1) + (quizzes * .1) + (exams * .2) + (intex * .1);
 
+    //calculates letter grade
     if (grade >= 93) {
         letter = "A";
     }
