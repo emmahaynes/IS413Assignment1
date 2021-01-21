@@ -1,0 +1,32 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom:50px;
+}
+#hawaii {
+    width: 400px;
+}
+#submitButton {
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition-property: background-color, color;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    width: 100px;
+    height: 50px;
+    font-size:medium;
+}
+
+#submitButton:hover {
+    background-color: dimgray;
+    color: white;
+}
