@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "413 Assignment 2";
+    ViewBag.Name = "Emma Haynes";
+    ViewBag.Index = "Home";
+    ViewBag.Form = "Grade Calculator";
+}
+
+<!DOCTYPE html>
+<!--Emma Haynes 413-002 1-27-2021-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" type="image/jpg" href="~/img/favicon.ico" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <p>@ViewBag.Name</p>
+        <!--Navigation to the other pages-->
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">@ViewBag.Index</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalculator">@ViewBag.Form</a></li>
+            </ul>
+        </menu>
+        <h1>@ViewBag.Title</h1>
+    </header>
+
+    @RenderBody()
+    <br /><br />
+    <footer>
+        Last modified 1/27/2021
+    </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/gradecalculator.js"></script>
+</body>
+</html>

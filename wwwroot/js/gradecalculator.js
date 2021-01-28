@@ -1,13 +1,12 @@
-﻿//Emma Haynes 1-20-20
-var submit = document.getElementById("submitButton");
+﻿//Emma Haynes 1-27-21
 
-//Button to calculate final grade
-submit.addEventListener("click", function () {
-    var assignment = document.getElementById("assignment").value;
-    var group = document.getElementById("group").value;
-    var quizzes = document.getElementById("quizzes").value;
-    var exams = document.getElementById("exams").value;
-    var intex = document.getElementById("intex").value;
+//Grab values from form
+$("#submitButton").click( function () {
+    var assignment = $("#assignment").val();
+    var group = $("#group").val();
+    var quizzes = $("#quizzes").val();
+    var exams = $("#exams").val();
+    var intex = $("#intex").val();
     var grade = 0;
     var letter = "";
 
